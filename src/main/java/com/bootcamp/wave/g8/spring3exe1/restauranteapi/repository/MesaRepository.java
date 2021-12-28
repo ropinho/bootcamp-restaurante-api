@@ -1,10 +1,12 @@
 package com.bootcamp.wave.g8.spring3exe1.restauranteapi.repository;
 
 import com.bootcamp.wave.g8.spring3exe1.restauranteapi.entity.Mesa;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class MesaRepository implements IRepository<Mesa>{
 
     private List<Mesa> mesas = new ArrayList<>();
