@@ -19,7 +19,7 @@ public class MesaService {
         try {
             mesa = this.mesaRepository.buscaUm(id);
         } catch (NoSuchElementException e) {
-            System.out.println(e);
+            throw new NoSuchElementException();
         }
         return mesa;
     }
